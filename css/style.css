@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/*--------------------------- JUMBOTRON ---------------------------------*/
+
+.jumbotron {
+  background-image:url('../images/badlands.png');
+  background-size: cover;
+  background-position: center;
+  height: 665px;
+}
+.nav {
+  height: 50px;
+  position: fixed;
+  background-color: transparent;
+  margin: 0 auto;
+}
+.nav-item {
+  color: #bfc0c1;
+  font-size: 20px;
+}
+.logo {
+  color: #321b1b;
+  font-family: 'Hind', sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  margin-top: 10px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: transparent;
+}
+
+li.nav-item a {
+  color: #bfc0c1;
+  background-color: transparent;
+}
+.nav-social {
+  color: #bfc0c1;
+  font-size: 25px;
+  padding-left: 20px;
+}
+a:hover {
+  text-decoration: none;
+}
+.name {
+  padding-top: 180px;
+}
+.name-text {
+  color: #321b1b;
+  font-family: 'Hind', sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  margin-bottom: -10px;
+}
+.name-title {
+  color: #321b1b;
+  font-family: 'Hind', sans-serif;
+  font-size: 30px;
+}
+/*--------------------------- END JUMBOTRON ---------------------------------*/
+
+/*--------------------------- ABOUT SECTION ---------------------------------*/
+
+/*--------------------------- END ABOUT SECTION ---------------------------------*/
