@@ -9,6 +9,8 @@
   background-size: cover;
   background-position: center;
   height: 665px;
+  margin: 0;
+  padding-top: 10px;
 }
 .nav {
   height: 50px;
@@ -62,5 +64,46 @@ a:hover {
 /*--------------------------- END JUMBOTRON ---------------------------------*/
 
 /*--------------------------- ABOUT SECTION ---------------------------------*/
-
+.about {
+  background-color: #e6e5e5;
+  margin-top: 0 auto;
+}
+.about-section {
+  padding-top: 150px;
+}
+.about-title {
+  color: #321b1b;
+  font-size: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.about-par {
+  color: #321b1b;
+  font-size: 20px;
+  font-family: 'Hind', sans-serif;
+}
+.about-list-title {
+  color: #321b1b;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.about-list {
+  color: #321b1b;
+  font-size: 17px;
+  font-family: 'Hind', sans-serif;
+  list-style: none;
+}
+i.up {
+  border: solid #321b1b;;
+  border-width: 0 7px 7px 0;
+  display: inline-block;
+  padding: 15px;
+}
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
 /*--------------------------- END ABOUT SECTION ---------------------------------*/

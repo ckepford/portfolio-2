@@ -12,12 +12,12 @@
 </head>
 <body>
   <!--************************** JUMBOTRON *****************************-->
-  <div class="jumbotron">
+  <div class="jumbotron" id="top">
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-5 col-sm-offset-1">
           <ul class="nav nav-pills">
-            <li role="presentation" class="active nav-item"><a href="#">about</a></li>
+            <li role="presentation" class="active nav-item"><a href="#about">about</a></li>
             <li role="presentation" class="nav-item"><a href="#">work</a></li>
             <li role="presentation" class="nav-item"><a href="#">contact</a></li>
           </ul>
@@ -53,35 +53,40 @@
         <h4 class="name-title">designer | developer</h4>
         </div>
         </div>
-        <!-- <div class="col-sm-4 col-sm-offset-2 nav">
-              <a href="#" class="nav-social">
-              <i class="fa fa-facebook nav-social"></i>
-              </a>
-              <a href="#" class="nav-social">
-              <i class="fa fa-twitter nav-social"></i>
-              </a>
-              <a href="#" class="nav-social">
-              <i class="fa fa-linkedin nav-social"></i>
-              </a>
-              <a href="#" class="nav-social">
-              <i class="fa fa-instagram nav-social"></i>
-              </a>
-        </div> -->
       </div>
     </div>
   </div>
   <!--************************** END JUMBOTRON *****************************-->
 
   <!--************************** ABOUT SECTION *****************************-->
-  <div class="container about">
-    <div class="row">
+  <div class="container-fluid about" id="about">
+    <div class="row about-section">
       <div class="col-sm-7">
-        <a href="http://placehold.it"><img src="http://placehold.it/600x650"></a>
+        <h1 class="about-title">about me</h1>
+        <h4 class="about-par">I'm a developer and designer from sunny California.
+          I like to make things and experiment with ideas.
+          I like to simplify and organize complex ideas and content, making it
+          functional and aesthetically pleasing. </h4>
+        <h5 class="about-list-title">{ random facts }</h5>
+      <ul class="about-list">
+        <li>>  I'm an avid thrifter</li>
+        <li>>  I enjoy photography</li>
+        <li>>  I like to explore</li>
+        <li>>  I enjoy a good game of ping pong</li>
+        <li>>  I'm a bird watcher</li>
+        <li>>  I dig Bob Marley</li>
+        <li>>  I prefer outdoors</li>
+      </ul>
       </div>
       <div class="col-sm-5">
-        <a href="http://placehold.it"><img src="http://placehold.it/450x650"></a>
+        <img src="images/careyAvatar-no-background.png" alt="my avatar pic" class="img-responsive">
+        <!-- <a href="http://placehold.it"><img src="http://placehold.it/450x500"></a> -->
       </div>
-    </row>
+    </div>
+    <div class="row">
+      <div class="col-sm-2 col-sm-offset-5 text-center">
+        <p><a href="#top"><i class="up"></i></a></p>
+      </div>
     </div>
   </div>
 
