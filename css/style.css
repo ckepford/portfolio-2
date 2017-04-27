@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
-@import url('https://fonts.googleapis.com/css?family=Hind:300,400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400,600');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 /*--------------------------- JUMBOTRON ---------------------------------*/
@@ -23,7 +23,7 @@
   font-size: 20px;
 }
 .logo {
-  color: #321b1b;
+  color: #522d2d;
   font-family: 'Hind', sans-serif;
   font-weight: 600;
   font-size: 50px;
@@ -45,6 +45,7 @@ li.nav-item a {
 }
 a:hover {
   text-decoration: none;
+  background-color: none;
 }
 .name {
   padding-top: 180px;
@@ -97,7 +98,7 @@ a:hover {
   list-style: none;
 }
 i.up {
-  border: solid #321b1b;;
+  border: solid white;
   border-width: 0 7px 7px 0;
   display: inline-block;
   padding: 15px;
@@ -107,3 +108,37 @@ i.up {
     -webkit-transform: rotate(-135deg);
 }
 /*--------------------------- END ABOUT SECTION ---------------------------------*/
+
+/*--------------------------- WORK SECTION ---------------------------------*/
+.work {
+  background-color: #522d2d;
+}
+.col-work {
+  margin: 75px 20px 5px;
+}
+.col-work-2 {
+  margin: 5px 20px 5px
+}
+.thumbnail {
+  padding-top: 10px;
+  box-shadow: 1px 1px 1px lightgrey;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  height: 250px;
+  width: 325px;
+}
+.thumbnail .caption {
+    padding: 0 10px;
+}
+.caption h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.caption {
+  font-family: 'Hind', sans-serif;
+  font-weight: 300;
+}
+
+
+
+/*--------------------------- END WORK SECTION ---------------------------------*/
