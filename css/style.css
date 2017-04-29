@@ -1,7 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400,600');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
+/*--------------------------- UNIVERSAL ---------------------------------*/
+i.up {
+  border: solid darkgoldenrod;
+  border-width: 0 7px 7px 0;
+  display: inline-block;
+  padding: 15px;
+}
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+/*--------------------------- END UNIVERSAL ---------------------------------*/
 /*--------------------------- JUMBOTRON ---------------------------------*/
 
 .jumbotron {
@@ -23,11 +34,17 @@
   font-size: 20px;
 }
 .logo {
-  color: #522d2d;
+  color: #321b1b;
   font-family: 'Hind', sans-serif;
   font-weight: 600;
   font-size: 50px;
   margin-top: 10px;
+  border: 4px double #522d2d;
+  border-radius: 100%;
+  display: inline-block;
+  padding: 7px;
+  width: 75px;
+  height: 75px;
 }
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
     color: #fff;
@@ -97,16 +114,7 @@ a:hover {
   font-family: 'Hind', sans-serif;
   list-style: none;
 }
-i.up {
-  border: solid white;
-  border-width: 0 7px 7px 0;
-  display: inline-block;
-  padding: 15px;
-}
-.up {
-    transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-}
+
 /*--------------------------- END ABOUT SECTION ---------------------------------*/
 
 /*--------------------------- WORK SECTION ---------------------------------*/
@@ -115,9 +123,11 @@ i.up {
 }
 .col-work {
   margin: 75px 20px 5px;
+  padding-left: 15px;
 }
 .col-work-2 {
-  margin: 5px 20px 5px
+  margin: 5px 20px 5px;
+  padding-left: 15px;
 }
 .thumbnail {
   padding-top: 10px;
@@ -138,7 +148,19 @@ i.up {
   font-family: 'Hind', sans-serif;
   font-weight: 300;
 }
-
-
-
 /*--------------------------- END WORK SECTION ---------------------------------*/
+/*--------------------------- CONTACT SECTION ---------------------------------*/
+.contact {
+  background-color: #e6e5e5;
+  margin-top: 0;
+}
+.contact-row {
+  margin-top: 100px;
+}
+
+.wufoo-form {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+/*--------------------------- END CONTACT SECTION ---------------------------------*/
