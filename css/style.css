@@ -162,5 +162,17 @@ a:hover {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
-
+.footer {
+  background-color: #522d2d;
+  padding: 30px;
+}
+.footer-text {
+  color: #bfc0c1;
+}
+.footer-social {
+  color: #bfc0c1;
+  padding-left: 15px;
+  padding-left: 50px;
+  font-size: 25px;
+}
 /*--------------------------- END CONTACT SECTION ---------------------------------*/
