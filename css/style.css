@@ -1,68 +1,99 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400,600');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-/*--------------------------- UNIVERSAL ---------------------------------*/
-i.up {
-  border: solid darkgoldenrod;
-  border-width: 0 7px 7px 0;
-  display: inline-block;
-  padding: 15px;
-}
-.up {
-    transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-}
-/*--------------------------- END UNIVERSAL ---------------------------------*/
-/*--------------------------- JUMBOTRON ---------------------------------*/
 
+
+/*--------------------------- NAVBAR ---------------------------------*/
+.navbar {
+  height: 50px;
+  background-color: rgba(255,255,255,.5);
+  margin: 0;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #522d2d;
+  font-size: 20px;
+  text-shadow: 1px 1px lightslategrey;
+  margin-left: 10%;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color: #7c6720;;
+  background-color: transparent;
+}
+.navbar-right {
+  margin-right:5%;
+}
+.nav-logo-ck {
+  color: #7c6720;
+  font-family: 'Hind', sans-serif;
+  font-size: 27px;
+  /*display: inline-block;*/
+  text-shadow: 1px 1px 1px #522d2d;
+  /*position: absolute;*/
+  /*top: -25%;*/
+  /*left: 22%;*/
+}
+.nav-logo-border {
+  border: 2px dotted #522d2d;
+  border-radius: 50%;
+  display: inline-block;
+  width: 40px;
+  top: 6%;
+  left: 2%;
+  position: absolute;
+}
+.nav-social {
+  font-size: 30px;
+  text-shadow: 1px 1px 1px lightslategrey;
+}
+.nav-social a {
+  color: #522d2d;
+}
+.nav-social>li>a:hover {
+  color: #7c6720;;
+  text-decoration: none;
+  background-color: transparent;
+}
+/*--------------------------- END NAVBAR ---------------------------------*/
+/*--------------------------- JUMBOTRON ---------------------------------*/
 .jumbotron {
   background-image:url('../images/badlands.png');
   background-size: cover;
   background-position: center;
-  height: 665px;
+  /*height: 665px;*/
+  height: 100vh;
   margin: 0;
   padding-top: 10px;
 }
-.nav {
-  height: 50px;
-  position: fixed;
-  background-color: transparent;
-  margin: 0 auto;
-}
-.nav-item {
-  color: #bfc0c1;
-  font-size: 20px;
-}
-.logo {
-  color: #321b1b;
+.logo-ck {
+  color: #a2862a;
   font-family: 'Hind', sans-serif;
   font-weight: 600;
-  font-size: 50px;
-  margin-top: 10px;
-  border: 4px double #522d2d;
-  border-radius: 100%;
+  font-size: 70px;
+  letter-spacing: -7px;
+  position: absolute;
+  top: -7%;
+  left: 48%;
+  margin-top: 18px;
   display: inline-block;
-  padding: 7px;
-  width: 75px;
-  height: 75px;
+  text-shadow: 3px 3px 1px #522d2d;
+}
+.logo-border {
+  border: 8px double #522d2d;
+  border-radius: 50%;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-color: rgba(82,45,45,1.0) rgba(82,45,45,0.4) rgba(82,45,45,0.6) rgba(82,45,45,0.8);
+  -webkit-animation: rotate-anchor 4.5s infinite;
+  -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes rotate-anchor {
+  from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}
 }
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-    color: #fff;
-    background-color: transparent;
-}
-
-li.nav-item a {
-  color: #bfc0c1;
-  background-color: transparent;
-}
-.nav-social {
-  color: #bfc0c1;
-  font-size: 25px;
-  padding-left: 20px;
-}
-a:hover {
-  text-decoration: none;
-  background-color: none;
+  color: #fff;
+  background-color: #000;
 }
 .name {
   padding-top: 180px;
@@ -71,13 +102,26 @@ a:hover {
   color: #321b1b;
   font-family: 'Hind', sans-serif;
   font-weight: 600;
-  font-size: 50px;
-  margin-bottom: -10px;
+  font-size: 70px;
+  margin-bottom: -1%;
+  text-shadow: 1px 1px 2px white;
 }
 .name-title {
   color: #321b1b;
   font-family: 'Hind', sans-serif;
   font-size: 30px;
+  text-shadow: 1px 1px darkgrey;
+}
+i.down {
+  border: solid #a2862a;
+  border-width: 0 7px 7px 0;
+  display: inline-block;
+  left: 30%;
+  padding: 25px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 /*--------------------------- END JUMBOTRON ---------------------------------*/
 
@@ -85,6 +129,7 @@ a:hover {
 .about {
   background-color: #e6e5e5;
   margin-top: 0 auto;
+  height: 100vh;
 }
 .about-section {
   padding-top: 150px;
@@ -94,6 +139,7 @@ a:hover {
   font-size: 50px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
+  text-shadow: 2px 2px 1px darkgrey;
 }
 .about-par {
   color: #321b1b;
@@ -119,15 +165,15 @@ a:hover {
 
 /*--------------------------- WORK SECTION ---------------------------------*/
 .work {
-  background-color: #522d2d;
+  background-color: #f5f2f0;
+  height: 100vh;
 }
-.col-work {
-  margin: 75px 20px 5px;
-  padding-left: 15px;
+.col-work.row {
+  margin: 5% 0 0;
 }
 .col-work-2 {
-  margin: 5px 20px 5px;
-  padding-left: 15px;
+  margin-right: 0;
+  margin-left: 0;
 }
 .thumbnail {
   padding-top: 10px;
@@ -153,14 +199,38 @@ a:hover {
 .contact {
   background-color: #e6e5e5;
   margin-top: 0;
+  height: 90vh;
 }
 .contact-row {
   margin-top: 100px;
 }
-
-.wufoo-form {
+.contact-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #522d2d;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 1px 1px darkgrey;
+}
+.form-control {
+ margin: 2% 0;
+}
+.contact-message {
+  padding-bottom: 25%;
+  padding-top: 3%;
+}
+/*.wufoo-form {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+}*/
+.contact-btn {
+  background-color: #7c6720;
+  color: white;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+.contact-btn:hover {
+  background-color: #522d2d;
+  color: white;
 }
 .footer {
   background-color: #522d2d;
@@ -170,9 +240,18 @@ a:hover {
   color: #bfc0c1;
 }
 .footer-social {
-  color: #bfc0c1;
   padding-left: 15px;
   padding-left: 50px;
   font-size: 25px;
 }
+.footer-links a {
+  color: #bfc0c1;
+}
+.footer-links>a:hover, .footer-links>a:focus {
+  color: #7c6720;
+  text-decoration: none;
+}
 /*--------------------------- END CONTACT SECTION ---------------------------------*/
+/*--------------------------- MEDIA QUERIES ---------------------------------*/
+
+/*--------------------------- MEDIA QUERIES ---------------------------------*/

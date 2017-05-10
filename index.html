@@ -8,148 +8,167 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
-  <!--************************** JUMBOTRON *****************************-->
-  <div class="jumbotron" id="top">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-5 col-sm-offset-1">
-          <ul class="nav nav-pills">
-            <li role="presentation" class="active nav-item"><a href="#about">about</a></li>
+  <!-- ************************** JUMBOTRON ***************************** -->
+    <!-- ************************** NAVBAR ***************************** -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="nav-logo-border" href="#home">
+						<div class="nav-logo-ck text-center">[<</div>
+          </a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="navbar-collapse">
+		      <ul class="nav navbar-nav navbar-right">
+						<li class=""><a class="text-shadow" href="#about">about</a></li>
+						<li class=""><a class="text-shadow" href="#work">work</a></li>
+						<li class=""><a class="text-shadow" href="#contact">contact</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+
+    <!-- <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+          <ul class="navbar-header">
+            <li role="presentation" class="nav-item"><a href="#about">about</a></li>
             <li role="presentation" class="nav-item"><a href="#work">work</a></li>
             <li role="presentation" class="nav-item"><a href="#contact">contact</a></li>
           </ul>
         </div>
-        <div class="col-sm-3 col-sm-offset-3">
-          <ul class="nav nav-pills">
-            <li role="presentation">
-              <a href="#">
-    			    <i class="fa fa-dribbble nav-social"></i>
-              </a>
-            </li>
-            <li role="presentation">
-              <a href="#">
-    			    <i class="fa fa-twitter nav-social"></i>
-              </a>
-            </li>
-            <li role="presentation">
-              <a href="#">
-    			    <i class="fa fa-linkedin nav-social"></i>
-              </a>
-            </li>
+        <div class="col-sm-1">
+          <a href="#home" class="nav-item nav-logo-border"><span class="nav-logo-ck">[<</span></a></li>
+        </div>
+        <div class="col-sm-3 pull-right">
+          <ul class="nav navbar-nav">
+            <li role="presentation"><a href="https://github.com/ckepford" target="_blank"><i class="fa fa-github nav-social"></i></a></li>
+            <li role="presentation"><a href="https://twitter.com/careykepford" target="_blank"><i class="fa fa-twitter nav-social"></i></a></li>
+            <li role="presentation"><a href="#"><i class="fa fa-linkedin nav-social"></i></a></li>
           </ul>
         </div>
-        <div class="row name">
-          <div class="col-sm-12 text-center">
-        <h2 class="logo">[<</h2>
-        <h3 class="name-text">carey kepford</h3>
-        <h4 class="name-title">designer | developer</h4>
-        </div>
-        </div>
       </div>
+  </nav> -->
+  <!-- ************************** END NAVBAR ***************************** -->
+  <div class="jumbotron" id="home">
+    <div class="container-fluid">
+        <div class="row name">
+          <div class=" col-xs-12 col-sm-12 text-center">
+            <div class="logo-ck">[<</div>
+            <div class="logo-border"></div>
+            <h3 class="name-text">carey kepford</h3>
+            <h4 class="name-title">developer | designer</h4>
+          </div>
+        </div>
+      <div class="col-xs-12 col-sm-12 text-center">
+        <p><a href="#about"><i class="down"></i></a></p>
+    </div>
     </div>
   </div>
+
   <!--************************** END JUMBOTRON *****************************-->
 
   <!--************************** ABOUT SECTION *****************************-->
   <div class="container-fluid about" id="about">
     <div class="row about-section">
-      <div class="col-sm-7">
+      <div class="col-xs-6 col-sm-8">
         <h1 class="about-title">about me</h1>
         <h4 class="about-par">I'm a developer and designer from sunny California.
           I like to make things and experiment with ideas.
           I like to simplify and organize complex ideas and content, making it
           functional and aesthetically pleasing. </h4>
         <h5 class="about-list-title">{ random facts }</h5>
-      <ul class="about-list">
-        <li>>  I'm an avid thrifter</li>
-        <li>>  I enjoy photography</li>
-        <li>>  I like to explore</li>
-        <li>>  I enjoy a good game of ping pong</li>
-        <li>>  I'm a bird watcher</li>
-        <li>>  I dig Bob Marley</li>
-        <li>>  I prefer outdoors</li>
-      </ul>
+        <ul class="about-list">
+          <li>>  I'm an avid thrifter</li>
+          <li>>  I enjoy photography</li>
+          <li>>  I like to explore</li>
+          <li>>  I enjoy a good game of ping pong</li>
+          <li>>  I'm a bird watcher</li>
+          <li>>  I dig Bob Marley</li>
+          <li>>  I prefer outdoors</li>
+        </ul>
       </div>
-      <div class="col-sm-5">
+      <div class="col-xs-6 col-sm-4">
         <img src="images/careyAvatar-no-background.png" alt="my avatar pic" class="img-responsive">
         <!-- <a href="http://placehold.it"><img src="http://placehold.it/450x500"></a> -->
       </div>
     </div>
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-sm-2 col-sm-offset-5 text-center">
-        <p><a href="#top"><i class="up"></i></a></p>
+        <p><a href="#top"><i class="down"></i></a></p>
       </div>
-    </div>
+    </div> -->
   </div>
 
   <!--************************** END ABOUT SECTION *****************************-->
 
   <!--************************** WORK SECTION *****************************-->
-  <div class="container-fluid work" id="work">
+  <div class="container-fluid work ative" id="work">
     <div class="row col-work">
-      <div class="col-sm-4">
+      <div class="col-xs-12 col-sm-4">
         <a href="https://ckepford.github.io/Final-Project/" target="blank">
           <div class="thumbnail">
-          <img src="http://placehold.it/300x200" alt="screenshot first site">
+          <img src="images/firstsitescreenshot.png" alt="screenshot first site" class="img-responsive">
           <div class="caption">
             <h4>First Website</h4>
           </div></a>
         </div>
       </div>
-      <div class="col-sm-4">
+      <div class="col-xs-12 col-sm-4">
         <a href="https://ckepford.github.io/Final-Project/" target="blank">
           <div class="thumbnail">
-          <img src="http://placehold.it/300x200" alt="screenshot first site">
+          <img src="images/petstorescreenshot.png" alt="screenshot pet store site" class="img-responsive">
           <div class="caption">
-            <h4>First Website</h4>
+            <h4>Pet Store - class project</h4>
           </div></a>
         </div>
       </div>
-      <div class="col-sm-4">
+      <div class="col-xs-12 col-sm-4">
         <a href="https://ckepford.github.io/Final-Project/" target="blank">
           <div class="thumbnail">
-          <img src="http://placehold.it/300x200" alt="screenshot first site">
+          <img src="images/restaurantscreenshot.png" alt="screenshot restaurant site" class="img-responsive">
           <div class="caption">
-            <h4>First Website</h4>
+            <h4>Restaurant - class project</h4>
           </div></a>
         </div>
       </div>
     </div>
     <div class="row col-work-2">
-      <div class="col-sm-4">
+      <div class="col-xs-12 col-sm-4">
         <a href="https://ckepford.github.io/Final-Project/" target="blank">
           <div class="thumbnail">
-          <img src="http://placehold.it/300x200" alt="screenshot first site">
+          <img src="images/caruthers fair screenshot.png" alt="screenshot caruthers fair site" class="img-responsive">
           <div class="caption">
-            <h4>First Website</h4>
+            <h4>Caruthers Fair</h4>
           </div></a>
         </div>
       </div>
-      <div class="col-sm-4">
+      <div class="col-xs-12 col-sm-4">
         <a href="https://ckepford.github.io/Final-Project/" target="blank">
           <div class="thumbnail">
-          <img src="http://placehold.it/300x200" alt="screenshot first site">
+          <img src="http://placehold.it/300x200" alt="screenshot first site" class="img-responsive">
           <div class="caption">
-            <h4>First Website</h4>
+            <h4>New Site Coming Soon</h4>
           </div></a>
         </div>
       </div>
-      <div class="col-sm-4">
+      <div class="col-xs-12 col-sm-4">
         <a href="https://ckepford.github.io/Final-Project/" target="blank">
           <div class="thumbnail">
-          <img src="http://placehold.it/300x200" alt="screenshot first site">
+          <img src="http://placehold.it/300x200" alt="screenshot first site" class="img-responsive">
           <div class="caption">
-            <h4>First Website</h4>
+            <h4>New Site Coming Soon</h4>
           </div></a>
         </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-2 col-sm-offset-5 text-center">
-        <p><a href="#top"><i class="up"></i></a></p>
       </div>
     </div>
   </div>
@@ -159,29 +178,42 @@
   <!--************************** CONTACT SECTION *****************************-->
   <div class="container-fluid contact" id="contact">
     <div class="row contact-row">
-      <div class="col-sm-8 col-sm-offset-2 center">
-        <iframe class="wufoo-form" height="425" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="https://ckepford.wufoo.com/embed/z1fr26950ff4bmv/"><a href="https://ckepford.wufoo.com/forms/z1fr26950ff4bmv/">Fill out my Wufoo form!</a></iframe>
-      </div>
+        <div class="col-xs-12 col-sm-12">
+        <h3 class="text-center contact-title">Email me!</h3>
+        </div>
     </div>
-    <div class="row">
-      <div class="col-sm-2 col-sm-offset-5 text-center">
-        <p><a href="#top"><i class="up"></i></a></p>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+          <input type="text" class="form-control" placeholder="Name" aria-describedby="basic-addon1">
+        </div>
       </div>
-    </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+          <div class="input">
+            <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
+            <input type="text" class="form-control contact-message" placeholder="Message" aria-describedby="basic-addon1">
+          </div>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-1 col-sm-offset-8">
+            <button class="btn btn-default contact-btn">Submit</button>
+          </div>
+        </div>
   </div>
   <!--************************** END CONTACT SECTION *****************************-->
     <!--************************** FOOTER SECTION *****************************-->
     <div class="container-fluid footer">
       <div class="row">
-        <div class="col-sm-6 text-center">
+        <div class="col-xs-hidden col-sm-6 text-center">
           <p class="footer-text">&copy; 2017 | Carey Kepford</p>
         </div>
-        <div class="col-sm-6 text-center">
+        <div class="col-xs-12 col-sm-6 text-center footer-links">
           <a  href="https://github.com/ckepford" target="_blank">
           <i class="fa fa-github footer-social"></i>
           </a>
           <a href="https://twitter.com/careykepford" target="_blank">
-          <i class="fa fa-twitter footer-social"></i>
+          <i class="fa fa-twitter footer-social footer-social"></i>
           </a>
           <a href="#">
           <i class="fa fa-linkedin footer-social"></i>
@@ -191,8 +223,9 @@
     </div>
       <!--************************** END FOOTER SECTION *****************************-->
 
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+
 </body>
 </html>
