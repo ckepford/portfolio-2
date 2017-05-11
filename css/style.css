@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400,600');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700');
 
 /*--------------------------- NAVBAR ---------------------------------*/
 .navbar {
   height: 50px;
   background-color: rgba(255,255,255,.5);
   margin: 0;
+  z-index: 100;
 }
 .navbar-default .navbar-nav>li>a {
   color: #522d2d;
@@ -19,8 +20,11 @@
   color: #7c6720;;
   background-color: transparent;
 }
+.navbar-center {
+  margin-left:5%;
+}
 .navbar-right {
-  margin-right:5%;
+  margin-right: 5%;
 }
 .nav-logo-ck {
   color: #7c6720;
@@ -40,6 +44,9 @@
   top: 6%;
   left: 2%;
   position: absolute;
+}
+a.nav-logo-border:hover, a.nav-logo-border:focus {
+  text-decoration: none;
 }
 .nav-social {
   font-size: 30px;
@@ -100,10 +107,10 @@
 }
 .name-text {
   color: #321b1b;
-  font-family: 'Hind', sans-serif;
-  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
   font-size: 70px;
-  margin-bottom: -1%;
+  font-style: italic;
   text-shadow: 1px 1px 2px white;
 }
 .name-title {
@@ -126,13 +133,13 @@ i.down {
 /*--------------------------- END JUMBOTRON ---------------------------------*/
 
 /*--------------------------- ABOUT SECTION ---------------------------------*/
-.about {
+#about {
   background-color: #e6e5e5;
   margin-top: 0 auto;
   height: 100vh;
 }
 .about-section {
-  padding-top: 150px;
+  padding-top: 10%;
 }
 .about-title {
   color: #321b1b;
@@ -254,4 +261,33 @@ i.down {
 /*--------------------------- END CONTACT SECTION ---------------------------------*/
 /*--------------------------- MEDIA QUERIES ---------------------------------*/
 
+@media only screen and (max-width: 768px) {
+  .logo-ck {
+    font-size: 65px;
+    position: absolute;
+    top: -5%;
+    left: 44%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .logo-ck {
+    font-size: 65px;
+    position: absolute;
+    top: -5%;
+    left: 47%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .logo-ck {
+    font-size: 70px;
+    position: absolute;
+    top: -7%;
+    left: 48%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #work, #contact, .footer {
+    background-color: #e6e5e5;
+  }
+}
 /*--------------------------- MEDIA QUERIES ---------------------------------*/
