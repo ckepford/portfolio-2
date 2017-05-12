@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400,600');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-@import url('https://fonts.googleapis.com/css?family=Caveat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
 
 /*--------------------------- NAVBAR ---------------------------------*/
 .navbar {
@@ -30,11 +30,7 @@
   color: #7c6720;
   font-family: 'Hind', sans-serif;
   font-size: 27px;
-  /*display: inline-block;*/
   text-shadow: 1px 1px 1px #522d2d;
-  /*position: absolute;*/
-  /*top: -25%;*/
-  /*left: 22%;*/
 }
 .nav-logo-border {
   border: 2px dotted #522d2d;
@@ -47,6 +43,9 @@
 }
 a.nav-logo-border:hover, a.nav-logo-border:focus {
   text-decoration: none;
+  border: 3px dotted #522d2d;
+  -webkit-animation: rotate-anchor 3.5s infinite;
+  -webkit-animation-timing-function: ease;
 }
 .nav-social {
   font-size: 30px;
@@ -60,6 +59,7 @@ a.nav-logo-border:hover, a.nav-logo-border:focus {
   text-decoration: none;
   background-color: transparent;
 }
+
 /*--------------------------- END NAVBAR ---------------------------------*/
 /*--------------------------- JUMBOTRON ---------------------------------*/
 .jumbotron {
@@ -183,12 +183,11 @@ i.down {
   margin-left: 0;
 }
 .thumbnail {
-  padding-top: 10px;
+  padding-top: 5px;
   box-shadow: 1px 1px 1px lightgrey;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
-  height: 250px;
-  width: 325px;
+  max-width: 315px;
 }
 .thumbnail .caption {
     padding: 0 10px;
@@ -225,10 +224,6 @@ i.down {
   padding-bottom: 25%;
   padding-top: 3%;
 }
-/*.wufoo-form {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-}*/
 .contact-btn {
   background-color: #7c6720;
   color: white;
@@ -290,4 +285,12 @@ i.down {
     background-color: #e6e5e5;
   }
 }
+@media only screen and (max-width: 767px) {
+  #navbar-collapse, .navbar-center {
+    margin-left: -5%;
+    color: white;
+    background-color: rgb(255, 255, 255);
+  }
+}
+
 /*--------------------------- MEDIA QUERIES ---------------------------------*/
