@@ -102,7 +102,7 @@ a.nav-logo-border:hover, a.nav-logo-border:focus {
   font-weight: 700;
   font-size: 90px;
   font-style: italic;
-  text-shadow: 2px 2px 2px darkgrey;
+  text-shadow: 5px 5px 5px black;
 }
 
 .name-title {
@@ -218,12 +218,12 @@ i.down {
 .contact {
   background-color: rgb(203, 140, 103);
   margin-top: 0;
-  height: 90vh;
+  height: 85vh;
 }
 
 .form-container {
   font-family: 'Open Sans', sans-serif;
-  margin-top: 10%;
+  margin-top: 5%;
   padding: 20px;
 }
 
@@ -254,7 +254,7 @@ i.down {
 /*--------------------------- FOOTER SECTION ---------------------------------*/
 .footer {
   background-color: rgb(81, 71, 66);
-  padding: 35px;
+  padding: 20px;
 }
 
 .footer-text {
@@ -262,9 +262,13 @@ i.down {
 }
 
 .footer-social {
-  padding-left: 15px;
-  padding-left: 50px;
+  padding: 10px;
   font-size: 40px;
+}
+
+.footer-contact {
+  color: #bfc0c1;
+  font-size: 25px;
 }
 
 .footer-links a {
@@ -278,39 +282,6 @@ i.down {
 /*--------------------------- END FOOTER SECTION ---------------------------------*/
 
 /*--------------------------- MEDIA QUERIES ---------------------------------*/
-@media only screen and (max-width: 768px) {
-  .logo-ck {
-    font-size: 65px;
-    position: absolute;
-    top: -5%;
-    left: 44%;
-  }
-}
-
-@media only screen and (min-width: 769px) {
-  .logo-ck {
-    font-size: 65px;
-    position: absolute;
-    top: -5%;
-    left: 47%;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .logo-ck {
-    font-size: 70px;
-    position: absolute;
-    top: -7%;
-    left: 48%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  #work, #contact, .footer {
-    background-color: #e6e5e5;
-  }
-}
-
 @media only screen and (max-width: 767px) {
   #navbar-collapse, .navbar-center {
     margin-left: -5%;
@@ -318,4 +289,18 @@ i.down {
     background-color: rgb(255, 255, 255);
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .footer-social, .footer-contact, .footer-text {
+    color: rgb(199, 85, 50);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #work, #contact, .footer {
+    background-color: #e6e5e5;
+    color: rgb(199, 85, 50);
+  }
+}
+
 /*--------------------------- MEDIA QUERIES ---------------------------------*/
