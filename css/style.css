@@ -3,6 +3,11 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
 
+
+a:focus, a:hover {
+  text-decoration: none;
+}
+
 /*--------------------------- NAVBAR ---------------------------------*/
 .navbar {
   height: 50px;
@@ -203,6 +208,14 @@ i.down {
     padding: 0 10px;
 }
 
+.thumbnail .caption:hover {
+  color: rgb(199, 85, 50);
+}
+
+.portfolio-box a:hover {
+  background-color: rgba(199, 85, 50, 0.5);
+}
+
 .caption h4 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -221,6 +234,12 @@ i.down {
   height: 85vh;
 }
 
+hr {
+    max-width: 50px;
+    border-width: 3px;
+    border-color: rgb(199, 85, 50);
+}
+
 .form-container {
   font-family: 'Open Sans', sans-serif;
   margin-top: 5%;
@@ -230,7 +249,7 @@ i.down {
 .form-container h4 {
   text-align: center;
   margin-top: 0;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   color: #321b1b;
   font-size: 3em;
   text-shadow: 1px 1px lightgrey;
